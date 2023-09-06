@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+    "name": "Break.",
+    "version": "0.1",
+    "description": "Simple posture reminder :)",
+    "icons": {
+      "16": "icon/16.png",
+      "32": "icon/32.png",
+      "192": "icon/192.png"
+    },
+    "permissions": [
+      "notifications",
+      "alarms"
+    ],
+    "background": {
+      "service_worker": "/js/background.js"
+    },
+    "action": {
+      "default_title": "Posture popup",
+      "default_popup": "popup.html",
+      "default_icons": {
+        "16": "icon/16.png",
+        "32": "icon/32.png",
+        "192": "icon/192.png"
+      }
+    }
+  }
